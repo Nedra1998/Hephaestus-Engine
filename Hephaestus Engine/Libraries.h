@@ -1,5 +1,5 @@
 /*OpenGL Libraries*/
-
+#include <glut.h>
 /*Standard Libraries*/
 #include <iostream>
 /*Basic Libraries*/
