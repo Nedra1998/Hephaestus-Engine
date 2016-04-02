@@ -144,7 +144,7 @@ void Logging::Initilize(string Program_Name)
 		Log(1, "Created New Log File", "Logging/Initilize");
 		Log(6, Date_and_Time, "Logging/Initilize");
 	}
-	Logging_Console.Print_Zone(Program_Name, "Program tital");
+	Logging_Console.Print_Zone(Program_Name, "Program Tital");
 }
 
 void Logging::Log(int Type, string Log, string Location)
