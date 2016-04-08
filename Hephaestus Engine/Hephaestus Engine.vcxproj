@@ -116,18 +116,28 @@
   <ItemGroup>
     <ClCompile Include="Consolas.cpp" />
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Hephaestus Interpreter.cpp" />
     <ClCompile Include="Initialize.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes.h" />
     <ClInclude Include="Consolas.h" />
+    <ClInclude Include="Hephaestus Interpreter.h" />
     <ClInclude Include="Initialize.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="stdlibraries.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log Data.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hephaestus Engine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hephaestus Recource Files\Resolutions.hrs" />
+    <None Include="Hephaestus Recource Files\Window Settings.hrs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -28,6 +28,9 @@
     <Filter Include="Hephaestus\Hephaestus Core">
       <UniqueIdentifier>{76cd2b99-5bc0-49dd-8fa0-09e59605cb40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Hephaestus\Hephaestus Resource Files">
+      <UniqueIdentifier>{057321ea-897c-4afa-a94a-3a1363829868}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consolas.cpp">
@@ -40,6 +43,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Initialize.cpp">
+      <Filter>Hephaestus\Hephaestus Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Hephaestus Interpreter.cpp">
       <Filter>Hephaestus\Hephaestus Core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,10 +65,29 @@
     <ClInclude Include="Classes.h">
       <Filter>Hephaestus\Hephaestus Core</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hephaestus Interpreter.h">
+      <Filter>Hephaestus\Hephaestus Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log Data.log">
       <Filter>Log File</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hephaestus Engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hephaestus Recource Files\Resolutions.hrs">
+      <Filter>Hephaestus\Hephaestus Resource Files</Filter>
+    </None>
+    <None Include="Hephaestus Recource Files\Window Settings.hrs">
+      <Filter>Hephaestus\Hephaestus Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

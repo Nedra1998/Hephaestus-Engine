@@ -22,6 +22,7 @@ void WINDOW::GenorateWindow(string programName, int width, int height)
 
 void WINDOW::LoadWindowSettings()
 {
+
 }
 
 void WINDOW::DestroyCurrentWindow()
