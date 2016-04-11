@@ -16,10 +16,25 @@ private:
 	};
 	struct ScriptFile
 	{
-		vector<string> rawFile;
+		string rawFile;
 		vector<Variable> variables;
 	};
+	struct VariablePointer
+	{
+		int variablePointer, scriptPointer;
+		string name;
+	};
 	vector<ScriptFile> scripts;
+	vector<VariablePointer> variables;
+
+	void CreateVariable(string name);
+	void SetVariableValueInt(int value);
+	void SetVariableValueChar(char value);
+	void SetVariableValueFloat(float value);
+	void SetVariableValueBool(bool value);
+	void SetVariableValueString(string value);
+
+	void LoadScript(string rawFile);
 public:
 	void LoadHRSFile(string fileDirectory, string vectorSaveName);
 	string DetermineStringValue(string valueName);
