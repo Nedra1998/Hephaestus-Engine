@@ -11,4 +11,6 @@ public:
 	void GLVersion();
 
 	unsigned int Defaults(unsigned int displayMode, int &width, int &height);
+
+	void FullInitilization(string settingsDirectory);
 };

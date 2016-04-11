@@ -22,6 +22,6 @@ private:
 
 public:
 	void GenorateWindow(string programName, int width, int height);
-	void LoadWindowSettings();
+	void LoadWindowSettings(string *program, Version *version, int *ratio, int *resolution, bool *fullscreen);
 	void DestroyCurrentWindow();
 };
