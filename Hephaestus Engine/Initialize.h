@@ -8,7 +8,7 @@ private:
 public:
 	void InitializeLogging(string programName);
 	void GLUTInitialize(int argc, char**argv);
-	void GLVersion();
+	void InitializeGl3W();
 
 	unsigned int Defaults(unsigned int displayMode, int &width, int &height);
 
