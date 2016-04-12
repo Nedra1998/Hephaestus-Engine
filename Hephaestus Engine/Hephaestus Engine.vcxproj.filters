@@ -89,7 +89,7 @@
     <None Include="Hephaestus Support Files\Resolutions.supt">
       <Filter>Hephaestus\Hephaestus Support Files</Filter>
     </None>
-    <None Include="Hephaestus Support Files\Window Settings.supt">
+    <None Include="Hephaestus Support Files\WindowSettings.supt">
       <Filter>Hephaestus\Hephaestus Support Files</Filter>
     </None>
   </ItemGroup>

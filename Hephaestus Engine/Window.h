@@ -1,27 +1,19 @@
 #pragma once
 #include "stdlibraries.h"
+#include "Definitons.h"
 using namespace std;
 
 class WINDOW
 {
 private:
-	struct DisplayRatio
-	{
-		int width, height;
-	};
-	struct DisplayResolution
-	{
-		int width, height;
-	};
 	
 	int mainWindow;
 	bool window = false;
-	string windowName;
-	DisplayRatio windowDisplayRatio;
-	DisplayResolution windowDisplayResolution;
+	WindowSettings windowSettings;
 
 public:
 	void GenorateWindow(string programName, int width, int height);
-	void LoadWindowSettings(string *program, Version *version, int *ratio, int *resolution, bool *fullscreen);
+	WindowSettings LoadWindowSettings();
+	void GenorateFromSettings();
 	void DestroyCurrentWindow();
 };

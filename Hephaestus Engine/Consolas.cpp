@@ -141,15 +141,15 @@ void LOGGING::Initilize(string programName)
 	string File = "Log Data.log";
 	Log_File.open(File.c_str());
 	if (Log_File.is_open()) {
-		Log(1, "Created New Log File", "Logging/Initilize");
-		Log(6, Date_and_Time, "Logging/Initilize");
+		Log(1, "Created New Log File", "Consolas.cpp/Logging/Initilize");
+		Log(6, Date_and_Time, "Consolas.cpp/Logging/Initilize");
 	}
 	Logging_Console.PrintZone(programName, "Program Tital");
 }
 
 void LOGGING::Log(int type, string log, string location)
 {
-	string Line, Log_Type, logLocation;
+	string Line, Log_Type;
 	if (type == 1) {
 		Log_Type = "Success";
 	}
@@ -170,17 +170,16 @@ void LOGGING::Log(int type, string log, string location)
 	}
 	if (type > 0) {
 		Line = "[" + Log_Type + "]" + log + "[" + location + "]";
-		logLocation = log + "[" + location + "]";
 		Logging_Console.PrintZone(Line, "General Log");
 		Logging_Console.NewLine();
 	}
 	Log_File << Line << "\n";
 	if (type == 5) {
-		Logging_Console.PrintZone(logLocation, "Information Log");
+		Logging_Console.PrintZone(log, "Information Log");
 		Logging_Console.NewLine();
 	}
 	if (type == 3 || type == 4) {
-		Logging_Console.PrintZone(logLocation, "Error Log");
+		Logging_Console.PrintZone(log, "Error Log");
 		Logging_Console.NewLine();
 	}
 	if (type == 0) {

@@ -137,7 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Hephaestus Support Files\Resolutions.supt" />
-    <None Include="Hephaestus Support Files\Window Settings.supt" />
+    <None Include="Hephaestus Support Files\WindowSettings.supt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
