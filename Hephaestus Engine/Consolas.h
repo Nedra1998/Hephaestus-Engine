@@ -5,40 +5,42 @@
 #include <vector>
 using namespace std;
 
-class Consolas {
+class CONSOLAS
+{
 private:
-	struct Zone {
-		string Name;
-		int Start_X, Start_Y, End_X, End_Y;
-		int Cursor_X, Cursor_Y;
+	struct zone {
+		string name;
+		int startX, startY, endX, endY;
+		int cursorX, cursorY;
 	};
-	Zone STD_Zone;
-	HANDLE Load_Buffer, Display_Buffer;
-	_CONSOLE_SCREEN_BUFFER_INFO Console_Info;
+	zone STDZone;
+	HANDLE loadBuffer, displayBuffer;
+	_CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
 
-	int Current_Zone = 0;
+	int currentZone = 0;
 
-	vector<Zone> Zones;
-	int Background_Color_Int, Text_Color_Int;
+	vector<zone> zones;
+	int backgroundColorInt, textColorInt;
 
 public:
 	/*Basic Functions*/
-	void Refresh_Console();
+	void RefreshConsole();
 	void Initilize();
-	void Print(string In);
-	void Set_Cursor_Position(int x, int y);
-	void Create_Zone(string Name, int Start_X, int Start_Y, int End_X, int End_Y);
-	void Set_Current_Zone(int Zone_Index);
-	void Search_Zone(string Name);
-	void New_Line();
+	void Print(string in);
+	void SetCursorPosition(int x, int y);
+	void CreateZone(string name, int startX, int startY, int endX, int endY);
+	void SetCurrentZone(int zoneIndex);
+	void SearchZone(string name);
+	void NewLine();
 	void Clear();
 	/*Advanced Functions*/
-	void Print_Zone(string In, string Zone_Name);
+	void PrintZone(string in, string zoneName);
 };
 
-namespace Logging {
-	void Initilize(string Program_Name);
-	void Log(int Type, string Log, string Location);
-	void Log_FPS(float FPS);
+namespace LOGGING
+{
+	void Initilize(string programName);
+	void Log(int type, string log, string location);
+	void LogFPS(float FPS);
 	void Terminate();
 };

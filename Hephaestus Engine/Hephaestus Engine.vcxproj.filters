@@ -28,15 +28,24 @@
     <Filter Include="Hephaestus\Hephaestus Core">
       <UniqueIdentifier>{76cd2b99-5bc0-49dd-8fa0-09e59605cb40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Hephaestus\Hephaestus Support Files">
+      <UniqueIdentifier>{057321ea-897c-4afa-a94a-3a1363829868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hephaestus\Hephaestus Definitions">
+      <UniqueIdentifier>{10bd7917-3f25-4fd9-858f-78277dd5ca28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Consolas.cpp">
       <Filter>Console System</Filter>
     </ClCompile>
     <ClCompile Include="Window.cpp">
+      <Filter>Hephaestus\Hephaestus Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Initialize.cpp">
       <Filter>Hephaestus\Hephaestus Core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,19 +53,44 @@
     <ClInclude Include="Consolas.h">
       <Filter>Console System</Filter>
     </ClInclude>
+    <ClInclude Include="stdlibraries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Window.h">
       <Filter>Hephaestus\Hephaestus Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Libraries.h">
+    <ClInclude Include="Initialize.h">
       <Filter>Hephaestus\Hephaestus Headers</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stuctures.h">
+      <Filter>Hephaestus\Hephaestus Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitons.h">
+      <Filter>Hephaestus\Hephaestus Definitions</Filter>
+    </ClInclude>
     <ClInclude Include="Classes.h">
-      <Filter>Hephaestus\Hephaestus Headers</Filter>
+      <Filter>Hephaestus\Hephaestus Definitions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Log Data.log">
       <Filter>Log File</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hephaestus Engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hephaestus Support Files\Resolutions.supt">
+      <Filter>Hephaestus\Hephaestus Support Files</Filter>
+    </None>
+    <None Include="Hephaestus Support Files\WindowSettings.supt">
+      <Filter>Hephaestus\Hephaestus Support Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
