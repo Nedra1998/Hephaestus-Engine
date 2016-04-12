@@ -34,6 +34,9 @@
     <Filter Include="Hephaestus\Hephaestus Definitions">
       <UniqueIdentifier>{10bd7917-3f25-4fd9-858f-78277dd5ca28}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Hephaestus\OpenGL Libraries">
+      <UniqueIdentifier>{ef3b04ac-8455-4df3-ae53-325e3d8e326b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Consolas.cpp">
@@ -47,6 +50,9 @@
     </ClCompile>
     <ClCompile Include="Initialize.cpp">
       <Filter>Hephaestus\Hephaestus Core</Filter>
+    </ClCompile>
+    <ClCompile Include="gl3w.c">
+      <Filter>Hephaestus\OpenGL Libraries</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="Classes.h">
       <Filter>Hephaestus\Hephaestus Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="gl3w.h">
+      <Filter>Hephaestus\OpenGL Libraries</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

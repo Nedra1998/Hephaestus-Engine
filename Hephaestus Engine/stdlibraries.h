@@ -8,6 +8,8 @@
 #include <exception>
 #include <stdexcept>
 #include <string.h>
+#include "gl3w.h"
 #include <GL/freeglut.h>
+
 
 #include "Consolas.h"
